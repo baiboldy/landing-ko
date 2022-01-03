@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel landing page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle"></div>
+        </header>
+            <video src="src/videos/back.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Never stop</h2>
+            <h3>Exploring the world</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda consequatur culpa ipsa ipsum magni necessitatibus praesentium quos repudiandae sed.</p>
+            <a href="#">Explore</a>
+        </div>
+        <ul class="social">
+            <li><a href=""><img class="icon" src="src/img/fb.png" alt=""></a></li>
+            <li><a href=""><img class="icon" src="src/img/tw.png" alt=""></a></li>
+            <li><a href=""><img class="icon" src="src/img/insta.png" alt=""></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showCase = document.querySelector('.showcase')
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showCase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
